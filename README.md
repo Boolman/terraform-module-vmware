@@ -38,13 +38,12 @@ git clone https://github.com/Boolman/terraform-module-vmware-data.git data
 
 Create the directory structure of terragrunt
 ```
-tree terragrunt/projects/myproject01/
-terragrunt.hcl
-data
- + terragrunt.hcl
-vm
- + terragrunt.hcl
-
+.
++-- terragrunt.hcl
++-- data
+|   +-- terragrunt.hcl
++-- vm
+|   +-- terragrunt.hcl
 ```
 
 contents of terragrunt.hcl in root directory
