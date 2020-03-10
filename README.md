@@ -17,6 +17,7 @@ terragrunt 0.21.4
 all settings can be set individually on each entry in the instances map. for example
 
 * cpu / memory configuration
+* template
 * list of extra disks in addition to the root disk ( size specified in the template ) 
 * run either cloudinit or vmware customize
 * any number of nics ( well not rly... vmware restriction ) 
