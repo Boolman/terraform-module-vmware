@@ -28,10 +28,17 @@ remote_connection is used to make sure the vm is online before running next modu
 
 ### Installing
 
+Create Directories
+
+```
+mkdir -p ~/terraform/module
+mkdir -p ~/terragrunt/projects
+```
+
 Clone repos 
 
 ```
-cd terraform/module/
+cd ~/terraform/module/
 git clone https://github.com/Boolman/terraform-module-vmware virtualmachine
 git clone https://github.com/Boolman/terraform-module-vmware-data.git data
 ```
@@ -73,7 +80,7 @@ terraform {
 contents of terragrunt.hcl in data directory
 ```
 terraform {
-  source = "/path/to/terraform/module/data"
+  source = "~/terraform/module/data"
 }
 include {
   path = find_in_parent_folders()
@@ -90,7 +97,7 @@ inputs = {
 contents of terragrunt.hcl in vm directory
 ```
 terraform {
-  source = "/path/to/terraform/module/virtualmachine"
+  source = "~/terraform/module/virtualmachine"
 }
 
 include {
