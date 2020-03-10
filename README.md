@@ -36,7 +36,7 @@ git clone https://github.com/Boolman/terraform-module-vmware virtualmachine
 git clone https://github.com/Boolman/terraform-module-vmware-data.git data
 ```
 
-build terragrunt directory structure and configuration
+Create the directory structure of terragrunt
 ```
 tree terragrunt/projects/myproject01/
 terragrunt.hcl
@@ -47,7 +47,7 @@ vm
 
 ```
 
-root terragrunt.hcl
+contents of terragrunt.hcl in root directory
 ```
 remote_state {
   backend = "consul"
@@ -71,8 +71,7 @@ terraform {
 
 ```
 
-cat data/terragrunt.hcl
-
+contents of terragrunt.hcl in data directory
 ```
 terraform {
   source = "/path/to/terraform/module/data"
@@ -89,7 +88,7 @@ inputs = {
 }
 
 ```
-cat vm/terragrunt.hcl
+contents of terragrunt.hcl in vm directory
 ```
 terraform {
   source = "/path/to/terraform/module/virtualmachine"
