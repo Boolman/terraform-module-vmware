@@ -45,7 +45,7 @@ git clone https://github.com/Boolman/terraform-module-vmware-data.git data
 
 Create the directory structure of terragrunt
 ```
-.
+~/terragrunt/projects
 +-- terragrunt.hcl
 +-- data
 |   +-- terragrunt.hcl
