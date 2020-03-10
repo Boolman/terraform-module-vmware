@@ -1,7 +1,7 @@
 # Vmware terraform module
 
 This module was created to fill the need to spawn multiple vm's with very dynamic settings and placement.
-I am a terragrunt fanboy, but I guess it should work for vanilla terraform. 
+I am a terragrunt fanboy, but I guess it should work for vanilla terraform.
 
 ## Getting Started
 
@@ -9,8 +9,8 @@ I will write under the assumption that you will be using terragrunt.
 
 ### Prerequisites
 
-Terraform 0.12.20 is the only requirement
-terragrunt x
+Terraform 0.12.20
+terragrunt 0.21.4
 
 ### Features
 
@@ -21,7 +21,8 @@ all settings can be set individually on each entry in the instances map. for exa
 * run either cloudinit or vmware customize
 * any number of nics ( well not rly... vmware restriction ) 
 * password is being set on windows host
-* remote_connection is used to make sure the vm is online before running next module in chain. eg. run ansible after
+
+remote_connection is used to make sure the vm is online before running next module in chain. eg. run ansible after
 
 
 ### Installing
