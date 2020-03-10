@@ -135,7 +135,7 @@ terragrunt apply-all
 
 ## Built With
 
-* [Terragrunt](https://maven.apache.org/)
+* [Terragrunt](https://github.com/gruntwork-io/terragrunt)
 * [Terraform](https://www.terraform.io/downloads.html) 
 
 ## Contributing
