@@ -32,7 +32,7 @@ Create Directories
 
 ```
 mkdir -p ~/terraform/module
-mkdir -p ~/terragrunt/projects
+mkdir -p ~/terragrunt/projects/vmware01
 ```
 
 Clone repos 
@@ -45,7 +45,7 @@ git clone https://github.com/Boolman/terraform-module-vmware-data.git data
 
 Create the directory structure of terragrunt
 ```
-~/terragrunt/projects
+~/terragrunt/projects/vmware01
 +-- terragrunt.hcl
 +-- data
 |   +-- terragrunt.hcl
