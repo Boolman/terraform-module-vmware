@@ -12,6 +12,18 @@ I will write under the assumption that you will be using terragrunt.
 Terraform 0.12.20 is the only requirement
 terragrunt x
 
+### Features
+
+all settings can be set individually on each entry in the instances map. for example
+
+* cpu / memory configuration
+* list of extra disks in addition to the root disk ( size specified in the template ) 
+* run either cloudinit or vmware customize
+* any number of nics ( well not rly... vmware restriction ) 
+* password is being set on windows host
+* remote_connection is used to make sure the vm is online before running next module in chain. eg. run ansible after
+
+
 ### Installing
 
 Clone repos 
