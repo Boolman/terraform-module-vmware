@@ -5,12 +5,12 @@ I am a terragrunt fanboy, but I guess it should work for vanilla terraform.
 
 ## Getting Started
 
-I will write under the assumption that you will be using terragrunt.
+I will write under the assumption that you will be using terragrunt. 
 
 ### Prerequisites
 
-Terraform 0.12.20
-terragrunt 0.21.4
+* Terraform 0.12.20
+* terragrunt 0.21.4
 
 ### Features
 
@@ -36,14 +36,14 @@ git clone https://github.com/Boolman/terraform-module-vmware virtualmachine
 git clone https://github.com/Boolman/terraform-module-vmware-data.git data
 ```
 
-build terragrunt structure and configuration
+build terragrunt directory structure and configuration
 ```
 tree terragrunt/projects/myproject01/
 terragrunt.hcl
 data
  + terragrunt.hcl
 vm
- + erragrunt.hcl
+ + terragrunt.hcl
 
 ```
 
