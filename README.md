@@ -109,7 +109,11 @@ dependency "data" {
 }
 
 locals {
-  defaults = { "extra_disks": [], "customize": true, "ds": dependency.data.outputs.datastore["ds01"].id, "cluster": dependency.data.outputs.cluster["cluster01"], "folder": "FOLDER1", }
+  defaults = { 
+  	"extra_disks": [], 
+	"customize": true, 
+	"folder": "FOLDER1", 
+  }
 }
 inputs = {
   instances = { 
@@ -117,10 +121,12 @@ inputs = {
 	"cpu": "1", 
 	"memory": "1024", 
 	"template": dependency.data.outputs.template["template1"], 
+	"ds": dependency.data.outputs.datastore["ds01"].id, 
+	"cluster": dependency.data.outputs.cluster["cluster01"],
 	"network": { 
 		"interfaces": [
 		  { "network": dependency.data.outputs.network["switch1"], "address": "1.1.1.2/24" }, 
-		  {"network": dependency.data.outputs.network["switch2"], "address": "10.0.0.10/24"}, 
+		  { "network": dependency.data.outputs.network["switch2"], "address": "10.0.0.10/24" }, 
 		], 
 		"dns": ["8.8.8.8"], 
 		"gateway": "10.0.0.1" 
